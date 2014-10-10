@@ -1,0 +1,26 @@
+.active {
+	background-color: gray;
+}
+.inactive{
+	background-color: white;
+}
+
+#side-bar{
+	float: left;
+	width: 33%;
+	height:100%;
+	overflow: scroll;
+}
+
+#container{
+	float: right;
+	width: 65%;
+}
+
+.debit {
+	background-color: #BCDD52
+}
+
+.credit {
+	background-color: #ff6969;
+}

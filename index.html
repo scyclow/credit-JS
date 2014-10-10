@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+		<title>Credit</title>
+	</head>
+	<body>
+		<nav>
+			<h1>Deb.it</h1>
+
+		</nav>
+		<div id="side-bar">
+			<h4>Ledger</h4>
+			<ul id="ledger"></ul>
+			<!-- here goes debits/credits -->
+		</div>
+		<div id="container">
+			<!-- some sort of button to switch between cr/dr-->
+			<div id="loan-form">
+				<div id="new-credit">
+					<form name="credit">
+						<span class="owe">I owe</span>
+						<input type="text" class="loan-creditor" placeholder="my friend">
+						<span class="owe">$</span>
+						<input type="text" class="loan-amount" placeholder="0.00">
+						<span class="owe">for</span>
+						<input type="text" class="loan-description" placeholder="something...">
+
+					</form>
+				</div>
+
+				<div id="new-debit">
+					<form name="debit">
+						<input type="text" class="loan-debtor" placeholder="My friend">
+						<span class="owe">owes me</span>
+						<span class="owe">$</span>
+						<input type="text" class="loan-amount" placeholder="0.00">
+						<span class="owe">for</span>
+						<input type="text" class="loan-description" placeholder="something...">
+					</form>
+				</div>
+
+				<div id="submit-loan">Submit</div>
+			</div>
+		</div>
+	</body>
+</html>
